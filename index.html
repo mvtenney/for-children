@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{margin:0;}
+    .spacer { height:100px; }
+    .numList{display:block; margin-top:175px;}
+    .nums{ display:block; padding:15px 40px; margin:0 25px 25px 0; border: none;  font-size: 70px; color:#fff; text-align: center;  float: left; max-height: 100px; max-width: 100px;}
+    #mathBar {background-color:#000; display: block; overflow: hidden; position: fixed; width:100%; position: fixed; top: 0; left: 0; z-index: 9999;} 
+    #mathBar ul {padding:0 20px; display:inline; margin-right:30px;}
+    #mathBar ul li{display: inline; padding:0;}
+    .mathButton { padding: 14px 16px; border: none; border-radius: 50%; font-size: 20px; color:#fff; background-color: #777; }
+    .button {height:100px; width:100px; background-color:brown; border-radius:50%; padding:none; float: left; font-size: 70px; color:#fff; border:none; margin:0 25px 25px 0; }
+    .minus{background-color: firebrick;} 
+    .plus{background-color: green;}
+  </style>
+
+</head>
+
+<body>
+  <div class="spacer"></div>
+  <div id="mathBar">
+    <ul>
+      <li><button class="mathButton plus" onclick="addNumber(1)">+1</button></li>
+      <li><button class="mathButton minus" onclick="deleteNumber(1)">-1</button></li>
+    </ul>
+    <ul>
+      <li><button class="mathButton plus" onclick="addNumber(2)">+2</button></li>
+      <li><button class="mathButton minus" onclick="deleteNumber(2)">-2</button></li>
+    </ul>
+    <ul>
+      <li><button class="mathButton plus" onclick="addNumber(3)">+3</button></li>
+      <li><button class="mathButton minus" onclick="deleteNumber(3)">-3</button></li>
+    </ul>
+    <ul>
+      <li><button class="mathButton plus" onclick="addNumber(4)">+4</button></li>
+      <li><button class="mathButton minus" onclick="deleteNumber(4)">-4</button></li>
+    </ul>
+    <ul>
+        <li><button class="mathButton plus" onclick="addNumber(5)">+5</button></li>
+        <li><button class="mathButton minus" onclick="deleteNumber(5)">-5</button></li>
+      </ul>
+  </div>
+  <div id="numList">
+
+  </div>
+  <!-- <button class="button" onclick="addNumber()">
+    +1
+  </button>
+  <button class="button" onclick="deleteNumber()" style="background-color:blue; ">
+    -1
+  </button> -->
+  <script src="numcolor.js"></script>
+</body>
+</html>
